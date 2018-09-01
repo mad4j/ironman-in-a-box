@@ -1,6 +1,6 @@
 # Ironman(-in-a-box)
 
-Play MS-DOS Ironman on modern browsers or mobile screens [HERE](https://mad4j.github.io/ironman-in-a-box/) or see the [MANUAL](manual.pdf).
+Play MS-DOS Ironman on modern browsers or mobile screens [HERE](https://mad4j.github.io/ironman-in-a-box/)
 
 ![cover](cover.png)
 
