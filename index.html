@@ -2,7 +2,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
     <title>Ironman in a Box</title>
+
+    <script type="text/javascript" src="js-dos-api-3.0.js"></script>
+
     <style type="text/css">
         body, html {
             height: 100%;
@@ -13,27 +17,38 @@
             background-color: #000000; 
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-        .dosbox-container { width: 640px; height: 400px; }
+        .page-container { text-align: center; }
+        .dosbox-container { width: 640px; height: 480px; }
         .dosbox-container > .dosbox-overlay { background: url(cover.png); }
     </style>
   </head>
   <body>
-    <div id="dosbox"></div>
-    <br/>
-    <!--
-    <button onclick="dosbox.requestFullScreen();">Make fullscreen</button>
-    -->
-    <script type="text/javascript" src="js-dos-api-3.0.js"></script>
+
+    <div class="page-container">
+      <div id="dosbox"></div>
+      <br/>
+      <button onclick="dosbox.requestFullScreen();">Make fullscreen</button>
+    </div>
+    
     <script type="text/javascript">
+
       var dosbox = new Dosbox({
         id: "dosbox",
         onload: function (dosbox) {
-          dosbox.run("IRONMAN.zip", "./IRONMAN/PLAY.BAT");
+          dosbox.run("GAME.zip", "./IRONMAN/PLAY.BAT");
         },
         onrun: function (dosbox, app) {
           console.log("App '" + app + "' is runned");
         }
       });
+
+      //added fake auto-start
+      window.onload = function(e) { 
+        document
+          .querySelector(".dosbox-start")
+          .click();
+      };
+
     </script>
   </body>
 </html>
