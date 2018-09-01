@@ -6,12 +6,12 @@ Play MS-DOS Ironman on modern browsers or mobile screens [HERE](https://mad4j.gi
 
 Use the following commands
 
-| Action     | P1 Key  | P2 Key Al   | Gesture        |
-|------------|---------|-------------|----------------|
-| Turn Right | C       | -           | -              |
-| Turn Left  | X       | -           | -              |
-| Throttle   | Q       | -           | -              |
-| Boost      | A       | -           | -              |
+| Action     | P1 Key  | P2 Key   | Gesture        |
+|------------|---------|----------|----------------|
+| Turn Right | C       | -        | -              |
+| Turn Left  | X       | -        | -              |
+| Throttle   | Q       | -        | -              |
+| Boost      | A       | -        | -              |
 
 
 Made possible using:
